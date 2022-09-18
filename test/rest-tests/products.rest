@@ -1,0 +1,55 @@
+### Test endpoint
+POST http://localhost:3000/product/test HTTP/1.1
+content-type: application/json
+
+### Test endpoint
+GET http://localhost:3000/product HTTP/1.1
+
+### Test endpoint
+GET http://localhost:3000/product 
+?id=62664e6ee14bfcdc10614760
+
+### Test endpoint - With Auth
+GET http://localhost:3000/product HTTP/1.1
+content-type: application/json
+# Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicGVybWlzc2lvbnMiOlsiR0VUX1VTRVJTIiwiREVMRVRFX1VTRVJTIiwiR0VUX1BFUk1JU1NJT05TIiwiVVBEQVRFX1BFUk1JU1NJT05TIl0sImlhdCI6MTY0OTM3NjY0NSwiZXhwIjoxNjQ5Mzc2NjYwfQ.qmIXXs_mv7WVp4gnPyc7Bta6wEYAiGzGxPvntegPFAE
+
+
+
+### update shutter 
+POST http://localhost:3000/product/shutter HTTP/1.1
+content-type: application/json
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicGVybWlzc2lvbnMiOlsiR0VUX1VTRVJTIiwiREVMRVRFX1VTRVJTIiwiR0VUX1BFUk1JU1NJT05TIiwiVVBEQVRFX1BFUk1JU1NJT05TIiwiVVBEQVRFX1BSSUNFUyJdLCJpYXQiOjE2NTIyMDMzMjQsImV4cCI6MTY1MjIwMzMzOX0.BfO4P7nHUWmnAcGIStOwT31vT_e99SFw61Wkp4CS8Zk
+
+{
+    "muanyagSzunyoghalos": {
+        "nmAr": 1,
+        "minFizetendoNm": 2,
+        "maxRendelhetoNm": 3
+    }
+}
+
+
+### update shutter - BAD data
+POST http://localhost:3000/product/shutter HTTP/1.1
+content-type: application/json
+
+{
+    "muanyagSzunyoghalos": {
+        "nmAr": "wrong type of data",
+        "minFizetendoNm": 2,
+        "maxRendelhetoNm": 3
+    }
+}
+
+
+
+### Get Cill endpoint
+GET http://localhost:3000/product/cill 
+
+### Get Wage endpoint
+GET http://localhost:3000/product/wage 
+
+### Get Wage endpoint
+GET http://localhost:3000/product/quotation-options

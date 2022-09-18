@@ -1,0 +1,60 @@
+### Test endpoint
+POST http://localhost:3000/auth/test HTTP/1.1
+content-type: application/json
+
+### Test endpoint - With Auth
+POST http://localhost:3000/auth/test HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicGVybWlzc2lvbnMiOltudWxsLG51bGwsbnVsbF0sImlhdCI6MTY1MjEyNTMyNiwiZXhwIjoxNjUyMTI1MzQxfQ.jyw3tmNuT8LzlTncd5XWsZl9A_cncM1L25hpwf2Vyi8
+
+
+
+### Create new user
+POST http://localhost:3000/auth/signup HTTP/1.1
+content-type: application/json
+
+{
+    "username": "createnewuser",
+    "password": "Pw12345_"
+}
+
+### Log In
+POST http://localhost:3000/auth/signin HTTP/1.1
+content-type: application/json
+
+{
+    "username": "admin",
+    "password": "Pw12345_"
+}
+
+### Refresh token
+POST http://localhost:3000/auth/token HTTP/1.1
+content-type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicGVybWlzc2lvbnMiOlsiR0VUX1VTRVJTIiwiREVMRVRFX1VTRVJTIiwiR0VUX1BFUk1JU1NJT05TIiwiVVBEQVRFX1BFUk1JU1NJT05TIiwiVVBEQVRFX1BSSUNFUyJdLCJpYXQiOjE2NTIyODM4NTh9.ZfO-yp3QtJjeu248lbu7CbRY9Ro8FGFdRZWewTDcaK4"
+}
+
+### WHOAMI
+GET http://localhost:3000/auth/whoami HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicGVybWlzc2lvbnMiOlsiR0VUX1VTRVJTIiwiREVMRVRFX1VTRVJTIiwiR0VUX1BFUk1JU1NJT05TIiwiVVBEQVRFX1BFUk1JU1NJT05TIiwiVVBEQVRFX1BSSUNFUyJdLCJpYXQiOjE2NTIyNzk0ODUsImV4cCI6MTY1MjI3OTUwMH0.BLhmD1KRhpwsU-DHBNQK_cMS-zqn_2RbWzhLC2l5vq0
+
+### Log Out
+POST http://localhost:3000/auth/signout HTTP/1.1
+content-type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicGVybWlzc2lvbnMiOlsiR0VUX1VTRVJTIiwiREVMRVRFX1VTRVJTIiwiR0VUX1BFUk1JU1NJT05TIiwiVVBEQVRFX1BFUk1JU1NJT05TIiwiVVBEQVRFX1BSSUNFUyJdLCJpYXQiOjE2NTIzMDM5NTh9.gECTMXSsY3nFhv2uc9zD2CMnIBlbmUHPwTkITZu_Yp8"
+}
+
+
+
+### WHOAMI
+GET http://localhost:3000/auth/whoami HTTP/1.1
+content-type: application/json
+
+### WHOAMI
+GET http://localhost:3000/auth/whoami HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicGVybWlzc2lvbnMiOlsiR0VUX1VTRVJTIiwiREVMRVRFX1VTRVJTIiwiR0VUX1BFUk1JU1NJT05TIiwiVVBEQVRFX1BFUk1JU1NJT05TIiwiVVBEQVRFX1BSSUNFUyJdLCJpYXQiOjE2NTIyNzk1NDEsImV4cCI6MTY1MjI3OTU1Nn0.bgLCL9EarXJnbpM4HPy8R01v0IW2OAWnOKHP3nwaW9Q

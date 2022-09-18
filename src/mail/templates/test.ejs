@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        h3 {
+            color: red;
+        }
+        </style>
+    </head>
+    <body>
+        <div style="width: 85%; margin: 0 7.5%;">
+            <div style="text-align: center; padding-left: 50px;">            
+                <h3>Test email 🤖</h3>
+                <p>Test data:</p>
+                <% if (students.length > 0) { %>
+                    <% students.forEach(student => {%>
+                       <div><%= student %></div>
+                    <%  });%>
+                <% }%>
+             </div>
+        </div>
+    </body>
+</html>

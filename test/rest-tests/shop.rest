@@ -1,0 +1,69 @@
+### ask a quotation 
+POST http://localhost:3000/shop/quotation HTTP/1.1
+content-type: application/json
+
+{
+  "quotationCustomer": {
+    "customerDetails_name": "string",
+    "customerDetails_email": "string@string.cc",
+    "customerDetails_residence": "string",
+    "customerDetails_phone": "string"
+  },
+  "quotationSummary": {
+
+    "family": "Inoutic Prestige",
+    "quotationProducts":[
+      {
+        "productType": "Nyíló erkélyajtó",
+        "shutter": "Nem kérek",
+        "web": "Fix, műanyag keretes",
+        "cill": "Belső műanyag",
+        "width": 851,
+        "height": 2399,
+        "count": 1
+      },
+      {
+        "productType": "Fix ablak",
+        "shutter": "Nem kérek",
+        "web": "Fix, műanyag keretes",
+        "cill": "Belső műanyag",
+        "width": 851,
+        "height": 2399,
+        "count": 2
+      }
+    ],
+
+    "quotationDetails_callMeBack": true,
+    "quotationDetails_deliveryBuildin": "Nem kérek",
+    "quotationDetails_actuality": "Vásárolni szeretnék",
+    "quotationDetails_notes": "string",
+    "quotationDetails_priority": "Azonnal szükségem van rá",
+    "quotationDetails_heardFromUs": "Google keresőből"
+  }
+}
+
+
+### ask a quotation - BAD data
+POST http://localhost:3000/shop/quotation HTTP/1.1
+content-type: application/json
+
+{
+    "muanyagSzunyoghalos": {
+        "nmAr": "wrong type of data",
+        "minFizetendoNm": 2,
+        "maxRendelhetoNm": 3
+    }
+}
+
+
+### Get Shop endpoint
+GET http://localhost:3000/shop 
+
+### test datataype
+POST http://localhost:3000/shop/test-datatype HTTP/1.1
+content-type: application/json
+
+{
+    "test": "test-datatype",
+    "test2": "test-datatype"
+}

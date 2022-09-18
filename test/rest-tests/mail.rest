@@ -1,0 +1,4 @@
+### Send Test Mail
+POST http://localhost:3000/mail/testmail HTTP/1.1
+content-type: application/json
+

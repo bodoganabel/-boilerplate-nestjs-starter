@@ -1,0 +1,13 @@
+### Render page
+GET http://localhost:3000/sandbox/render-page HTTP/1.1
+content-type: application/json
+
+
+### Generating pdf
+POST http://localhost:3000/sandbox/generatepdf HTTP/1.1
+content-type: application/json
+
+### Send Mail
+POST http://localhost:3000/sandbox/mail HTTP/1.1
+content-type: application/json
+

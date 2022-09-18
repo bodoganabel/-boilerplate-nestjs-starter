@@ -1,0 +1,20 @@
+## Healthcheck
+GET  http://localhost:3000/admin/healthcheck HTTP/1.1
+content-type: application/json
+
+### Log In
+POST http://localhost:3000/auth/signin HTTP/1.1
+content-type: application/json
+
+{
+    "username": "admin",
+    "password": "Pw12345_"
+}
+
+### Reset database
+POST http://localhost:3000/admin/resetdb HTTP/1.1
+content-type: application/json
+
+{
+    "masterPassword": "51ee8fd327d6204a22adc7438448e61e"
+}

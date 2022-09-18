@@ -1,0 +1,16 @@
+### generate test pdf 2
+POST http://localhost:3000/pdf/testpdf-tofile2 HTTP/1.1
+content-type: application/json
+
+### generate test pdf
+POST http://localhost:3000/pdf/testpdf-tofile HTTP/1.1
+content-type: application/json
+
+### generate pdf, send mail, delete pdf from server
+POST http://localhost:3000/pdf/testpdf-toMail HTTP/1.1
+content-type: application/json
+
+### generate quote (this is test, won't be called)
+POST http://localhost:3000/pdf/quote HTTP/1.1
+content-type: application/json
+

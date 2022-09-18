@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible"
+			content="IE=edge">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+    .row {
+      width: 100%;
+      background-color: #ffffff;
+      display: flex;
+      color: #000000;
+    }
+	.column{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+    .fullwidth{width: 100%;}
+    .center {justify-content: center;}
+    .spacebetween {justify-content: space-between;}
+
+
+    .minWidth60{min-width:60px;}
+    .w40{width:40px;}
+    .w60{width:60px;}
+    .w80{width:80px;}
+    .w5sz{width: 5%;}
+    .w10sz{width: 10%;}
+    .w15sz{width: 15%;}
+    .w30sz{width: 30%;}
+    </style>
+	</head>
+	<body style="background-color: #f5f5f5; height: 100%;" >
+		<div class=""></div>
+		<div class="a4page" style="height: 100%;">
+			<div class="header row center " style="height: 100%;">
+				<section style="display: flex; flex-direction: column; justify-content:space-between; height: 100%;">
+				<div class="row">
+
+					<div class="fullwidth">Image</div>
+					<div class="fullwidth">
+						<b>Ablak Bazár Kft.</b>
+						<br>
+						2011, Budakalász, Vasút sor 80.
+						<br>
+						<b>Tel./Fax:</b>
+						+36 30 424 1733
+						<br>
+						<b>Mobil:</b>
+						+36 30 424 1733
+						<br>
+						<b>E-mail:</b>
+						iroda@ablakbazar.hu
+						<br>
+						<b>Cégjegyzékszám:</b>
+						01-09-941274
+						<br>
+						<b>Adószám:</b>
+						22736873-2-41
+						<br>
+						
+					</div>
+				</div>
+					
+			</div>
+			<div class="arajanlat row center">Árajánlat</div>
+			<div class="megrendelo row center">
+				<div class="megrendelo-adatok-label">
+					<div>Név:</div>
+					<div>Cím:</div>
+					<div>Tel:</div>
+					<div>E-mail:</div>
+				</div>
+				<div class="megrendelo-adatok-value">
+					<div><%= name %></div>
+					<div>
+						Dorog, Bécsi út 33, 2510 Magyarország
+					</div>
+					<div>06304249989</div>
+					<div>
+						<%= email %>
+					</div>
+				</div>
+			</div>
+			<div class="profil termek- row spacebetween">
+				<div>
+					<div>Termék</div>
+					<div>image</div>
+				</div>
+				<div>
+
+					<div class="profil row">
+						<div class="termek-detail-label minWidth60">Profil:</div>
+						<div>
+							Deceuninck Inoutic Arcade, 5 légkamrás
+						</div>
+					</div>
+					<div class="szin row ">
+						<div class="termek-detail-label minWidth60">Szín:</div>
+						<div>Fehér</div>
+					</div>
+					<div class="uveg row ">
+						<div class="termek-detail-label minWidth60">Üveg:</div>
+						<div>
+							4-16-4 low-e + Ag U=1,0
+						</div>
+					</div>
+					<div class="vasalat row ">
+						<div class="termek-detail-label minWidth60">Vasalat:</div>
+						<div>Maco Multi-Matic</div>
+					</div>
+				</div>
+			</div>
+			<div class="termekek">
+				<div class="termek-reszletek-label row center">
+					<div class="w5sz">Sorszám</div>
+					<div class="w30sz">Megnevezés</div>
+					<div class="w10sz">Szélesség</div>
+					<div class="w10sz">Magasság</div>
+					<div class="w15sz">Mennyiség</div>
+					<div class="w15sz">Nettó egységár</div>
+					<div class="w15sz">Bruttó egységár</div>
+					<div class="w15sz">Bruttó érték</div>
+				</div>
+				<div class="termek-reszletek row center">
+					<div class="w5sz">1</div>
+					<div class="w30sz">
+						Egyszárnyú bejárati ajtó
+					</div>
+					<div class="w10sz">60 cm</div>
+					<div class="w10sz">200 cm</div>
+					<div class="w15sz">1 db</div>
+					<div class="w15sz">28 600 Ft</div>
+					<div class="w15sz">36 322 Ft</div>
+					<div class="w15sz">36 322 Ft</div>
+				</div>
+				<div class="termek-reszletek row center">
+					<div class="w5sz">2</div>
+					<div class="w30sz">
+						Egyszárnyú bejárati ajtó
+					</div>
+					<div class="w10sz">60 cm</div>
+					<div class="w10sz">200 cm</div>
+					<div class="w15sz">1 db</div>
+					<div class="w15sz">28 600 Ft</div>
+					<div class="w15sz">36 322 Ft</div>
+					<div class="w15sz">36 322 Ft</div>
+				</div>
+				<div class="row spacebetween">
+					<div>Összesen</div>
+					<div>240 902 Ft</div>
+				</div>
+				<div class="row spacebetween">
+					<div>Előleg</div>
+					<div>120 451 Ft</div>
+				</div>
+
+				<div class="termek-reszletek row"
+					style="margin-top: 40px;">
+					<b>Munkadíj</b>
+				</div>
+				<div class="row spacebetween">
+					<div>
+						Nyílászárók szállítása
+					</div>
+					<div>55 931 Ft</div>
+				</div>
+				<div class="row spacebetween">
+					<div>
+						Nyílászárók bontása, beépítése
+					</div>
+					<div>38 100 Ft</div>
+				</div>
+				<div class="row spacebetween">
+					<div>
+						Redonyök felhelyezése
+					</div>
+					<div>13 716 Ft</div>
+				</div>
+				<div class="row spacebetween">
+					<div>
+						Szúnyoghálók felhelyezése
+					</div>
+					<div>13 208 Ft</div>
+				</div>
+				<div class="row spacebetween">
+					<div>
+						Párkányok felhelyezése
+					</div>
+					<div>3 810 Ft</div>
+				</div>
+				<div class="row spacebetween">
+					<div>
+						<b>ÖSSZESEN:</b>
+					</div>
+					<div>
+						<b>124 765 Ft</b>
+					</div>
+				</div>
+					
+				</section>
+				<section>
+					<div>Tisztelettel:</div>
+					<div>Az Ablak Bazár Kft. csapata</div>
+					<div class="tesztelje-webaruhazunkat column">
+						<div>
+							Tesztelje webáruházunkat, ahol verhetetlen árakat talál!
+						</div>
+						<div>
+							Ajánlatunk árai 14 napig érvényesek. A szerzõdéskötés feltétele 50 % elõleg befizetése.
+						</div>
+						<div>
+							Szállítási határido 3-5 hét, színes ill. íves szerkezeteknél 4-8 hét.
+						</div>
+						<div>
+							5 év garancia.
+						</div>
+					</div>
+				</section>
+
+
+
+				<div class="fullwidth"></div>
+			</div>
+
+		</div>
+		<!-- Codes by Quackit.com -->
+
+	</body>
+</html>

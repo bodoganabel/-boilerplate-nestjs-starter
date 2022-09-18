@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<title>Árajanlat</title>
+		<link rel="stylesheet" href="../quote-template/assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap">
+		<link rel="stylesheet" href="../quote-template/assets/css/styles.css">
+	</head>
+
+	<body style="font-family: Poppins, sans-serif;">
+		<div class="col"
+			style="height: 2000px;margin-top: 20px;margin-right: 12px;margin-bottom: 20px;margin-left: 12px;">
+			<div style="width: 100%;">
+				<div class="col-1"
+					style="margin: 0;margin-top: 0;margin-right: 0;width: 100%;">
+					<div class="row"
+						style="border-width: 1px;border-style: solid;margin-left: 0;margin-right: 0;">
+						<div class="col-8 d-flex d-xl-flex flex-grow-1 justify-content-xl-center align-items-xl-center">
+							<div class="row d-xl-flex flex-grow-1 justify-content-xl-center"
+								style="margin-right: 0;margin-left: 0;">
+								<div class="col-6 text-center align-self-center"
+									style="height: 167px;">
+									<img src="../quote-template/assets/img/logo.svg"
+										style="height: 100%;width: 100%;">
+								</div>
+								<div class="col-6">
+									<p class="text-start"
+										style="text-align: center;padding-left: 40px;">
+										<br>
+										Ablak Bazár Kft.
+										<br>
+										2011, Budakalász, Vasút sor 80.
+										<br>
+										Tel./Fax: +36 30 424 1733
+										<br>
+										Mobil: +36 30 424 1733
+										<br>
+										E-mail: iroda@ablakbazar.hu
+										<br>
+										Cégjegyzékszám: 01-09-941274
+										<br>
+										Adószám: 22736873-2-41
+										<br>
+										<br>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h1 class="text-center"
+						style="margin-top: 20px;color: rgb(33, 37, 41);--bs-primary: #e14c04;--bs-primary-rgb: 225,76,4;font-size: 64px;">
+						Árajánlat
+					</h1>
+					<p style="text-align: center;">
+						Dátum: <%date%>
+						<br>
+						Azonosító:&nbsp;<%quoteId%>
+						<br>
+					</p>
+					<p style="text-align: center;">
+						<br>
+					</p>
+					<div class="card"
+						style="margin-top: 20px;border-top-style: solid;border-top-color: rgba(87,98,109,0.5);"></div>
+					<div class="row"
+						style="margin-top: 40px;border-width: 1px;border-style: solid;margin-right: 0;margin-left: 0;">
+						<div class="col-6 d-flex d-xl-flex flex-row flex-grow-1 justify-content-center align-items-center justify-content-xl-start align-items-xl-center">
+							<p class="d-xl-flex align-items-xl-center">
+								Név: <%=name %>
+								<br>
+								Cím: <%=residence %>
+								<br>
+								Tel: <%=phone %>
+								<br>
+								E-mail: <%=email %>
+								<br>
+							</p>
+						</div>
+						<div class="col-4 d-flex d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center align-items-xl-center">
+							<p class="d-xl-flex align-items-xl-center">
+								Profil:&nbsp;<%=pr_profile %>
+								<br>
+								Szín:&nbsp;<%=pr_color %>
+								<br>
+								Üveg:&nbsp;<%=pr_glass %>
+								<br>
+								Vasalat:&nbsp;<%=pr_iron %>
+								<br>
+							</p>
+						</div>
+						<div class="col-2 text-center d-sm-flex d-lg-flex d-xl-flex justify-content-sm-center align-items-sm-center justify-content-lg-center align-items-lg-center align-items-xl-center">
+							<img src="../quote-template/assets/img/inoutic-arcade.png"
+								style="width: 100px;height: 100px; object-position: center;">
+						</div>
+					</div>
+					<h4 style="margin-top: 60px;font-weight: bold;">Termékek:</h4>
+					<div class="row"
+						style="margin-top: 20px;margin-right: 0;margin-left: 0;">
+						<div class="col-auto"
+							style="width: 74px;">
+							<p style="font-size: 12px;"
+								class="item-text">
+								<strong>Sorszám</strong>
+							</p>
+						</div>
+						<div class="col-2">
+							<p class="item-text">
+								<strong>Megnevezés</strong>
+								<br>
+							</p>
+						</div>
+						<div class="col">
+							<div class="row">
+								<div class="col">
+									<div class="row">
+										<div class="col-2"
+											style="width: 74px;">
+											<p class="item-text">
+												<strong>Szélesség</strong>
+											</p>
+										</div>
+										<div class="col-2"
+											style="width: 74px;">
+											<p class="item-text">
+												<strong>Magasság</strong>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-auto">
+							<p class="item-text">
+								<strong>1 db</strong>
+							</p>
+						</div>
+						<div class="col-1"
+							style="width: 120px;">
+							<p class="item-text">
+								<strong>Nettó egységár</strong>
+								<br>
+							</p>
+						</div>
+						<div class="col-1"
+							style="width: 120px;">
+							<p class="item-text">
+								<strong>Bruttó egységár</strong>
+								<br>
+							</p>
+						</div>
+						<div class="col-1">
+							<p class="item-text">
+								<strong>Bruttó érték</strong>
+								<br>
+							</p>
+						</div>
+					</div>
+					<% for(var i=0; i < products.length; i++) { %>
+                    <div class="row"
+						style="margin: 0;">
+						<div class="col-1"
+							style="width: 74px;">
+							<p class="item-text"><%=i+1%>.</p>
+						</div>
+						<div class="col-2">
+							<p class="item-text">
+								<%=(products[i].name)+(products[i].warning !== undefined? products[i].warning: '')%>
+								<br>
+							</p>
+						</div>
+						<div class="col">
+							<div class="row">
+								<div class="col">
+									<div class="row">
+										<div class="col-2"
+											style="width: 74px;">
+											<p class="item-text"><%=products[i].width%></p>
+										</div>
+										<div class="col-2"
+											style="width: 74px;">
+											<p class="item-text"><%=products[i].height%></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-auto">
+							<p class="item-text"><%=products[i].quantity%></p>
+						</div>
+						<div class="col-1"
+							style="width: 120px;">
+							<p class="item-text">
+								<%=products[i].netPrice%>
+								<br>
+							</p>
+						</div>
+						<div class="col-1"
+							style="width: 120px;">
+							<p class="item-text">
+								<%=products[i].grossPrice%>
+								<br>
+							</p>
+						</div>
+						<div class="col-1">
+							<p class="item-text">
+								<%=products[i].grossValue%>
+								<br>
+							</p>
+						</div>
+					</div>
+                    <% } %>
+					<div class="row"
+						style="margin-top: 20px;border-top: 2px solid rgba(87,98,109,0.5) ;">
+						<div class="col"></div>
+						<div class="col">
+							<div class="row">
+								<div class="col">
+									<p>
+										<strong>Összesen:</strong>
+									</p>
+								</div>
+								<div class="col"
+									style="text-align: center;">
+									<p style="border-top-color: rgba(33,37,41,0.48);">
+										<strong><%=productsTotal%></strong>
+									</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<p style="font-size: 14px;">
+										<strong>Fizetendő előleg:</strong>
+									</p>
+								</div>
+								<div class="col"
+									style="text-align: center;">
+									<p style="font-size: 14px;border-top-color: rgba(238,238,238,0.26);">
+										<strong><%=productsDeposit%></strong>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h4 style="margin-top: 60px;">
+						<strong>Munkadíj</strong>
+						:
+					</h4>
+					<div class="row"
+						style="border-bottom: 2px solid rgba(87,98,109,0.5);margin-top: 20px;margin-right: 0;margin-left: 0;">
+						<div class="col-10 d-xl-flex align-items-xl-end">
+							<p class="d-xl-flex align-items-xl-start item-text">
+								Nyílászárók szállítása
+								<br>
+							</p>
+						</div>
+						<div class="col">
+							<p class="item-text">
+								<%=service_delivery%>
+								<br>
+							</p>
+						</div>
+						<div class="col-10 d-xl-flex align-items-xl-end">
+							<p class="d-xl-flex align-items-xl-start item-text">
+								Nyílászárók bontása, beépítése
+								<br>
+							</p>
+						</div>
+						<div class="col">
+							<p class="item-text">
+								<%=service_build%>
+								<br>
+							</p>
+						</div>
+						<div class="col-10 d-xl-flex align-items-xl-end">
+							<p class="d-xl-flex align-items-xl-start item-text">
+								Redonyök felhelyezése
+								<br>
+							</p>
+						</div>
+						<div class="col">
+							<p class="item-text">
+								<%=service_shutters%>
+								<br>
+							</p>
+						</div>
+						<div class="col-10 d-xl-flex align-items-xl-end">
+							<p class="d-xl-flex align-items-xl-start item-text">
+								Szúnyoghálók felhelyezése
+								<br>
+							</p>
+						</div>
+						<div class="col">
+							<p class="item-text">
+								<%=service_webs%>
+								<br>
+							</p>
+						</div>
+						<div class="col-10 d-xl-flex align-items-xl-end">
+							<p class="d-xl-flex align-items-xl-start item-text">
+								Párkányok felhelyezése
+								<br>
+							</p>
+						</div>
+						<div class="col">
+							<p class="item-text">
+								<%=service_cills%>
+								<br>
+							</p>
+						</div>
+						<div class="col-10 d-xl-flex align-items-xl-end">
+							<p class="d-xl-flex align-items-xl-start item-text"
+								style="font-weight: bold;font-size: 14px;">
+								Összesen:
+								<br>
+							</p>
+						</div>
+						<div class="col">
+							<p class="item-text"
+								style="font-weight: bold;font-size: 14px;">
+								<%=serviceTotal%>
+								<br>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="row"
+						style="margin-right: 0;margin-left: 0;">
+						<div class="col"
+							style="margin-top: 60px;">
+							<p>
+								<strong>Tisztelettel:</strong>
+							</p>
+						</div>
+					</div>
+					<div class="row"
+						style="margin-right: 0;margin-left: 0;">
+						<div class="col">
+							<p style="font-size: 14px;font-weight: bold;">
+								Az Ablak Bazár Kft. csapata
+								<br>
+							</p>
+						</div>
+					</div>
+					<div>
+						<div class="col"
+							style="border-width: 1px;border-style: solid;border-bottom-style: solid;margin-top: 20px;margin-bottom: 20px;">
+							<h4 class="text-center text-primary"
+								style="--bs-primary: #e14c04;--bs-primary-rgb: 225,76,4;">
+								Tesztelje webáruházunkat, ahol verhetetlen árakat talál!
+								<br>
+							</h4>
+							<p style="text-align: center;">
+								Ajánlatunk árai 14 napig érvényesek.
+								<br>
+								A szerzõdéskötés feltétele 50 % elõleg befizetése.
+								<br>
+								Szállítási határido 3-5 hét, színes ill. íves szerkezeteknél 4-8 hét.
+								<br>
+								5 év garancia
+								<br>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../quote-template/assets/bootstrap/js/bootstrap.min.js"></script>
+	</body>
+
+</html>

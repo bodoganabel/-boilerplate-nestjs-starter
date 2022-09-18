@@ -1,0 +1,12 @@
+img {
+  object-fit: contain;
+}
+
+p {
+}
+
+.item-text {
+  font-size: 10px;
+  text-align: left;
+}
+
